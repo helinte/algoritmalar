@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 11:00:29 &#214;S"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTA2OzA5OjQ1OjQ3IMOWUzszMDYz"/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTA3OzExOjAwOjI5IMOWUzszOzMxNTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Sayi1" type="Integer" array="False" size=""/>
+            <declare name="SayininKaresi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birinci Sayiyi Giriniz.&quot;" newline="True"/>
+            <input variable="Sayi1"/>
+            <assign variable="SayininKaresi" expression="Sayi1*Sayi1"/>
+            <output expression="&quot;Sayinin Karesi:&quot; &amp;(sayi1*sayi1)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
