@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-08 01:23:12 &#214;&#214;"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTA4OzAxOjA3OjA4IMOWw5Y7MzE4Mw=="/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTA4OzAxOjIzOjEyIMOWw5Y7MTszMjg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="KisaKenar, UzunKenar, &#199;evre, Alan" type="Real" array="False" size=""/>
+            <output expression="&quot;Kisa kenari giriniz:&quot;" newline="True"/>
+            <input variable="KisaKenar"/>
+            <output expression="&quot;Uzun kenari giriniz:&quot;" newline="True"/>
+            <input variable="UzunKenar"/>
+            <assign variable="&#199;evre" expression="(KisaKenar+UzunKenar)*2"/>
+            <assign variable="Alan" expression="KisaKenar*UzunKenar"/>
+            <output expression="&quot;Dikd&#246;rtgenin Alani:&quot; &amp;Alan" newline="True"/>
+            <output expression="&quot;Dikd&#246;rtgenin &#199;evresi:&quot; &amp;&#199;evre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
