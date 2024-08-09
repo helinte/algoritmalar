@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-09 03:56:10 &#214;S"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTA5OzAzOjQ0OjQ2IMOWUzszMDU4"/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTA5OzAzOjU2OjEwIMOWUzsyOzMxNjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Karekok" type="Real" array="False" size=""/>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Sayi Giriniz:&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="Karekok" expression="sqrt(sayi)"/>
+            <output expression="&quot;Girilen sayinin karekoku:&quot; &amp;Karekok" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
