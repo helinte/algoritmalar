@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-09 04:27:30 &#214;S"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTA5OzA0OjE0OjEyIMOWUzszMDQ5"/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTA5OzA0OjI3OjMwIMOWUzsxOzMxNjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Kenar1" type="Integer" array="False" size=""/>
+            <declare name="Kenar2" type="Integer" array="False" size=""/>
+            <declare name="Hipotenus" type="Real" array="False" size=""/>
+            <output expression="&quot;Birinci Kenarin Uzunlugunu Giriniz.&quot;" newline="True"/>
+            <input variable="Kenar1"/>
+            <assign variable="Kenar1" expression="(Kenar1)^2"/>
+            <output expression="&quot;&#304;kinci Kenarin Uzunlugunu Giriniz.&quot;" newline="True"/>
+            <input variable="Kenar2"/>
+            <assign variable="Kenar2" expression="(Kenar2)^2"/>
+            <assign variable="Hipotenus" expression="sqrt(Kenar1+Kenar2)"/>
+            <output expression="&quot;Hipotenus:&quot; &amp;Hipotenus" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
