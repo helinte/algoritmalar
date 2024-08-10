@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-10 12:49:52 &#214;S"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTEwOzEyOjM3OjQxIMOWUzszMDQ3"/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTEwOzEyOjQ5OjUyIMOWUzsxOzMxNjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize1, vize2, final" type="Integer" array="False" size=""/>
+            <declare name="GenelOrtalama, VizeOrtalamasi" type="Real" array="False" size=""/>
+            <output expression="&quot;Birinci vize notunu giriniz.&quot;" newline="True"/>
+            <input variable="vize1"/>
+            <output expression="&quot;&#304;kinci vize notunu giriniz.&quot;" newline="True"/>
+            <input variable="vize2"/>
+            <output expression="&quot;Final notunu giriniz.&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="VizeOrtalamasi" expression="(vize1+vize2)/2"/>
+            <assign variable="GenelOrtalama" expression="VizeOrtalamasi*0.3+Final*0.7"/>
+            <if expression="GenelOrtalama&gt;50">
+                <then>
+                    <output expression="&quot;Ge&#231;tiniz Notunuz:&quot; &amp;GenelOrtalama" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Kaldiniz. Notunuz:&quot; &amp;GenelOrtalama" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
