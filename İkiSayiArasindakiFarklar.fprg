@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-12 01:41:31 &#214;&#214;"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTExOzA3OjEwOjEwIMOWUzszMDM5"/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTEyOzAxOjQxOjMxIMOWw5Y7MjszMjgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Sayi1, Sayi2, Saya&#231;" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birinci sayiyi giriniz.&quot;" newline="True"/>
+            <input variable="Sayi1"/>
+            <output expression="&quot;&#304;kinci sayiyi giriniz.&quot;" newline="True"/>
+            <input variable="Sayi2"/>
+            <if expression="Sayi1&gt;Sayi2">
+                <then>
+                    <while expression="Sayi2&lt;Sayi1-1">
+                        <assign variable="Sayi2" expression="Sayi2+1"/>
+                        <output expression="&quot;Sayi :&quot; &amp;Sayi2" newline="True"/>
+                    </while>
+                </then>
+                <else>
+                    <while expression="Sayi1&lt;Sayi2-1">
+                        <assign variable="Sayi1" expression="Sayi1+1"/>
+                        <output expression="&quot;Sayi :&quot; &amp;Sayi1" newline="True"/>
+                    </while>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
