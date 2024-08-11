@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-11 06:38:07 &#214;S"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTExOzA0OjA1OjIxIMOWUzszMDQy"/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTExOzA2OjM4OjA3IMOWUzsxOzMxNjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="AY" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bulundu&#287;unuz Ay&#305; Giriniz:&quot;" newline="True"/>
+            <input variable="AY"/>
+            <if expression="AY&gt;=1 &amp;&amp; AY&lt;3">
+                <then>
+                    <output expression="&quot;KI&#350;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="AY&gt;=3 &amp;&amp; AY&lt;6">
+                        <then>
+                            <output expression="&quot;&#304;LKBAHAR&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="AY&gt;=6 &amp;&amp; AY&lt;9">
+                                <then>
+                                    <output expression="&quot;YAZ&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="AY&gt;=9 &amp;&amp; AY&lt;12">
+                                        <then>
+                                            <output expression="&quot;SONBAHAR&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="AY=12">
+                                                <then>
+                                                    <output expression="&quot;KI&#350;&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;L&#220;TFEN 1-12 ARASI B&#304;R DE&#286;ER G&#304;R&#304;N&#304;Z.&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
