@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-13 08:12:42 &#214;S"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTEzOzA3OjUzOjAxIMOWUzszMDQ4"/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTEzOzA4OjEyOjQyIMOWUzsxOzMxNTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, yazisayisi, turasayisi, denemesayisi" type="Integer" array="False" size=""/>
+            <declare name="turaolasilik, yaziolasilik" type="Real" array="False" size=""/>
+            <assign variable="denemesayisi" expression="1000"/>
+            <assign variable="yazisayisi" expression="0"/>
+            <assign variable="turasayisi" expression="0"/>
+            <assign variable="sayac" expression="1"/>
+            <while expression="sayac&lt;=denemesayisi">
+                <assign variable="sayi" expression="Random(100)"/>
+                <if expression="sayi%2=0">
+                    <then>
+                        <assign variable="yazisayisi" expression="yazisayisi+1"/>
+                    </then>
+                    <else>
+                        <assign variable="turasayisi" expression="turasayisi+1"/>
+                    </else>
+                </if>
+                <assign variable="sayac" expression="sayac+1"/>
+            </while>
+            <assign variable="turaolasilik" expression="turasayisi/denemesayisi"/>
+            <assign variable="yaziolasilik" expression="yazisayisi/denemesayisi"/>
+            <output expression="&quot;tura olas&#305;l&#305;&#287;&#305;&quot; &amp;turaolasilik" newline="True"/>
+            <output expression="&quot;yazi olas&#305;l&#305;&#287;&#305;&quot; &amp;yaziolasilik" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
