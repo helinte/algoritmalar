@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-16 12:39:16 &#214;&#214;"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE2OzEyOjM0OjM1IMOWw5Y7MzE4NA=="/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE2OzEyOjM5OjE2IMOWw5Y7MTszMjk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayilar" type="Integer" array="True" size="10"/>
+            <declare name="enBuyuk, enKucuk, sayac" type="Integer" array="False" size=""/>
+            <assign variable="enBuyuk" expression="0"/>
+            <assign variable="enKucuk" expression="0"/>
+            <for variable="sayac" start="0" end="9" direction="inc" step="1">
+                <assign variable="sayilar[sayac]" expression="Random(50)+1"/>
+            </for>
+            <for variable="sayac" start="0" end="9" direction="inc" step="1">
+                <if expression="sayilar[sayac]&gt;enBuyuk">
+                    <then>
+                        <assign variable="enBuyuk" expression="sayilar[sayac]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="enKucuk" expression="sayilar[0]"/>
+        </body>
+    </function>
+</flowgorithm>
