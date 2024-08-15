@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="HEL&#304;N"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-08-16 12:39:16 &#214;&#214;"/>
+        <attribute name="saved" value="2024-08-16 12:48:56 &#214;&#214;"/>
         <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE2OzEyOjM0OjM1IMOWw5Y7MzE4NA=="/>
-        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE2OzEyOjM5OjE2IMOWw5Y7MTszMjk2"/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE2OzEyOjQ4OjU2IMOWw5Y7MjszMzAx"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -27,6 +27,16 @@
                 </if>
             </for>
             <assign variable="enKucuk" expression="sayilar[0]"/>
+            <for variable="sayac" start="0" end="9" direction="inc" step="1">
+                <if expression="sayilar[sayac]&lt;enKucuk">
+                    <then>
+                        <assign variable="enKucuk" expression="sayilar[sayac]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;En B&#252;y&#252;k Sayi:&quot; &amp;enBuyuk" newline="True"/>
+            <output expression="&quot;En K&#252;&#231;&#252;k Sayi:&quot; &amp;enKucuk" newline="True"/>
         </body>
     </function>
 </flowgorithm>
