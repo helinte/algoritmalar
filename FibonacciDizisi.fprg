@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-15 10:52:30 &#214;S"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE1OzA5OjQ5OjAzIMOWUzszMDU5"/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE1OzEwOjUyOjMwIMOWUzsxOzMxNTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="eleman1, eleman2, elemansayisi, sayac" type="Integer" array="False" size=""/>
+            <output expression="&quot;dizinin eleman sayisini giriniz&quot;" newline="True"/>
+            <input variable="elemanSayisi"/>
+            <declare name="fibonacci" type="Integer" array="True" size="elemansayisi"/>
+            <output expression="&quot;fibonacci[0] giriniz&quot;" newline="True"/>
+            <assign variable="fibonacci[0]" expression="1"/>
+            <output expression="&quot;fibonacci[1] giriniz.&quot;" newline="True"/>
+            <assign variable="fibonacci[1]" expression="1"/>
+            <for variable="sayac" start="2" end="elemansayisi-1" direction="inc" step="1">
+                <assign variable="fibonacci[sayac]" expression="fibonacci[sayac-2]+fibonacci[sayac-1]"/>
+                <output expression="&quot;fibonacci[sayac]&quot; &amp;fibonacci[sayac]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
