@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-15 02:22:16 &#214;&#214;"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE1OzAxOjMyOjAwIMOWw5Y7MzE3MQ=="/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE1OzAyOjIyOjE2IMOWw5Y7MTszMjg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tutulanSayi, girilenSayi, tahminHakki" type="Integer" array="False" size=""/>
+            <declare name="devamMi" type="String" array="False" size=""/>
+            <assign variable="devamMi" expression="&quot;E&quot;"/>
+            <do expression="devamMi=&quot;E&quot; || devamMi=&quot;e&quot;">
+                <assign variable="tutulanSayi" expression="Random(50)+1"/>
+                <assign variable="tahminHakki" expression="5"/>
+                <do expression="tahminHakki&gt;0">
+                    <output expression="&quot;Tahmin Giriniz. Kalan Hakkiniz:&quot; &amp;tahminHakki" newline="True"/>
+                    <input variable="girilenSayi"/>
+                    <if expression="girilenSayi=tutulanSayi">
+                        <then>
+                            <output expression="&quot;Tebrikler &quot;  &amp;(6-tahminHakki)   &amp;&quot; denemede bildiniz.&quot;" newline="True"/>
+                            <assign variable="tahminHakki" expression="0"/>
+                        </then>
+                        <else>
+                            <if expression="girilenSayi&gt;tutulanSayi">
+                                <then>
+                                    <output expression="&quot;Daha k&#252;&#231;&#252;k bir sayi giriniz.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Daha b&#252;y&#252;k bir sayi giriniz.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <assign variable="tahminHakki" expression="tahminHakki-1"/>
+                </do>
+                <output expression="&quot;devam etmek istiyor musunuz (E/H)&quot;" newline="True"/>
+                <input variable="devamMi"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
