@@ -4,12 +4,21 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="HEL&#304;N"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-08-15 06:52:45 &#214;S"/>
+        <attribute name="saved" value="2024-08-15 07:15:44 &#214;S"/>
         <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE1OzA2OjUyOjI2IMOWUzszMDU1"/>
-        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE1OzA2OjUyOjQ1IMOWUzsxOzMxNjQ="/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE1OzA3OjE1OjQ0IMOWUzsyOzMxNjQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="sayi, faktoriyel, sayac" type="Real" array="False" size=""/>
+            <assign variable="faktoriyel" expression="1"/>
+            <output expression="&quot;sayi giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="sayac" start="sayi" end="1" direction="dec" step="1">
+                <assign variable="faktoriyel" expression="faktoriyel*sayac"/>
+            </for>
+            <output expression="&quot;girilen &quot; &amp;sayi  &amp;&quot; faktoryeli: &quot; &amp;faktoriyel" newline="True"/>
+        </body>
     </function>
 </flowgorithm>

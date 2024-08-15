@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-15 07:30:05 &#214;S"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE1OzA3OjE1OjQ3IMOWUzszMDU4"/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE1OzA3OjMwOjA1IMOWUzszOzMxNTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac, sayi1, sayi2" type="Integer" array="False" size=""/>
+            <output expression="&quot;birinci sayiyi giriniz&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;ikinci sayiyi giriniz&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <if expression="sayi1&gt;sayi2">
+                <then>
+                    <for variable="sayac" start="sayi2+1" end="sayi1-1" direction="inc" step="1">
+                        <output expression="&quot;sayi:&quot; &amp;sayac" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="sayac" start="sayi1+1" end="sayi2-1" direction="inc" step="1">
+                        <output expression="&quot;sayi:&quot; &amp;sayac" newline="True"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
