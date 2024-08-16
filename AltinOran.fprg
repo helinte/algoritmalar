@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HEL&#304;N"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-16 09:01:22 &#214;S"/>
+        <attribute name="created" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE2OzA4OjUyOjI4IMOWUzszMDYw"/>
+        <attribute name="edited" value="SEVMxLBOO0RFU0tUT1AtMTlNSzlNNjsyMDI0LTA4LTE2OzA5OjAxOjIyIMOWUzsxOzMxNTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="oncekiDeger, sonrakiDeger, elemansayisi, bulunduguDeger, sayac" type="Real" array="False" size=""/>
+            <assign variable="elemanSayisi" expression="20"/>
+            <assign variable="oncekiDeger" expression="1"/>
+            <assign variable="bulunduguDeger" expression="1"/>
+            <assign variable="sonrakiDeger" expression="oncekiDeger+bulunduguDeger"/>
+            <output expression="&quot;fibonacci&quot; &amp;oncekiDeger" newline="True"/>
+            <output expression="&quot;fibonacci&quot; &amp;bulunduguDeger" newline="True"/>
+            <for variable="sayac" start="3" end="200" direction="inc" step="1">
+                <assign variable="sonrakiDeger" expression="oncekiDeger+bulunduguDeger"/>
+                <output expression="&quot;sonraki fibonacci(&quot;&amp;sayac &amp;&quot;)&quot; &amp;sonrakiDeger" newline="True"/>
+                <output expression="&quot;oran:&quot; &amp;sonrakiDeger/bulunduguDeger" newline="True"/>
+                <assign variable="oncekiDeger" expression="bulunduguDeger"/>
+                <assign variable="bulunduguDeger" expression="sonrakiDeger"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
